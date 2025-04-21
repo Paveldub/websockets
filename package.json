@@ -3,12 +3,17 @@
     "version": "1.0.0",
     "license": "MIT",
     "scripts": {
-        "dev": "concurrently -k \"tsc -p ./src/server -w\" \"nodemon ./dist/server/server.js\""
+        "dev": "concurrently -k \"tsc -p ./src/server -w\" \"nodemon ./dist/server/server.js\" \"webpack serve --config ./src/client/webpack.dev.js\""
     },
     "dependencies": {
         "express": "^5.1.0",
         "socket.io": "^4.8.1",
-        "socket.io-client": "^4.8.1"
+        "socket.io-client": "^4.8.1",
+        "ts-loader": "^9.5.2",
+        "typescript": "^5.8.3",
+        "webpack": "^5.99.6",
+        "webpack-cli": "^6.0.1",
+        "webpack-dev-server": "^5.2.1"
     },
     "devDependencies": {
         "@types/express": "^5.0.1",
