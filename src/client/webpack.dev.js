@@ -16,7 +16,10 @@ module.exports = {
       }
     ]
   },
-  entry: './src/client/client.ts',
+  entry: {
+    rng: path.resolve(__dirname, './rng.ts'),
+    colabPainter: path.resolve(__dirname, './colabPainter.ts')
+  },
   module: {
     rules: [
       {
@@ -30,7 +33,7 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js']
   },
   output: {
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, '../../dist/client')
   }
 }

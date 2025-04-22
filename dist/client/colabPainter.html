@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Colab Painter : Socket.IO TypeScript Tutorials by Sean Bradley :
+      https://sbcode.net/tssock/
+    </title>
+    <style>
+      body {
+        overflow: hidden;
+        margin: 0px;
+      }
+
+      #canvas {
+        width: 100%;
+        height: 100%;
+      }
+
+      #greenButton {
+        background: green;
+        position: absolute;
+        left: 0px;
+        width: 80px;
+        height: 40px;
+      }
+
+      #blueButton {
+        background: blue;
+        position: absolute;
+        left: 80px;
+        width: 80px;
+        height: 40px;
+      }
+
+      #redButton {
+        background: red;
+        position: absolute;
+        left: 160px;
+        width: 80px;
+        height: 40px;
+      }
+
+      #yellowButton {
+        background: yellow;
+        position: absolute;
+        left: 240px;
+        width: 80px;
+        height: 40px;
+      }
+
+      #orangeButton {
+        background: orange;
+        position: absolute;
+        left: 320px;
+        width: 80px;
+        height: 40px;
+      }
+
+      #blackButton {
+        background: black;
+        position: absolute;
+        left: 400px;
+        width: 80px;
+        height: 40px;
+      }
+
+      #whiteButton {
+        background: white;
+        position: absolute;
+        left: 480px;
+        width: 78px;
+        height: 38px;
+        border: 1px solid black;
+      }
+
+      #resetButton {
+        position: absolute;
+        left: 560px;
+        width: 78px;
+        height: 40px;
+        border-radius: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas
+      id="canvas"
+      width="628"
+      height="400"
+      style="position: absolute; top: 40px; border: 5px solid"
+    ></canvas>
+    <div id="greenButton"></div>
+    <div id="blueButton"></div>
+    <div id="redButton"></div>
+    <div id="yellowButton"></div>
+    <div id="orangeButton"></div>
+    <div id="blackButton"></div>
+    <div id="whiteButton"></div>
+    <input id="resetButton" type="button" value="Reset" />
+    <script type="module" src="colabPainter.bundle.js"></script>
+  </body>
+</html>
