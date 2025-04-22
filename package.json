@@ -6,9 +6,12 @@
         "dev": "concurrently -k \"tsc -p ./src/server -w\" \"nodemon ./dist/server/server.js\" \"webpack serve --config ./src/client/webpack.dev.js\""
     },
     "dependencies": {
+        "@dimforge/rapier3d-compat": "^0.15.1",
+        "@types/three": "^0.175.0",
         "express": "^5.1.0",
         "socket.io": "^4.8.1",
         "socket.io-client": "^4.8.1",
+        "three": "^0.175.0",
         "ts-loader": "^9.5.2",
         "typescript": "^5.8.3",
         "webpack": "^5.99.6",

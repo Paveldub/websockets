@@ -6,5 +6,5 @@
     "moduleResolution": "Bundler",
     "strict": true
   },
-  "include": ["**/*.ts", "../typings/*"]
+  "include": ["**/*.ts"]
 }
